@@ -175,16 +175,6 @@ body {
   transition: color var(--transition-duration-and-func);
 }
 
-/* .contact-tel {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  margin-right: 70px;
-  transition: color var(--transition-duration-and-func);
-} */
-
 .contact:hover,
 .contact:focus {
   color: #404bbf;
@@ -483,7 +473,7 @@ body {
 
 /*====================== /footer ================*/
 
-/*====================== portfolio =================*/
+/*====================== PORTFOLIO =================*/
 
 .filter {
   padding-top: 96px;
@@ -500,9 +490,9 @@ body {
   padding: 12px 24px;
   border-radius: 4px;
   border: var(--border-menu-filter-btn);
-  transition: background-color var(--transition-duration-and-func),
-    color var(--transition-duration-and-func), border var(--transition-duration-and-func),
-    box-shadow var(--transition-duration-and-func);
+  transition: color var(--transition-duration-and-func),
+    background-color var(--transition-duration-and-func),
+    border-color var(--transition-duration-and-func), box-shadow var(--transition-duration-and-func);
 }
 
 .menu-filter-btn:hover,
@@ -543,7 +533,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 40px 32px 0px;
+  padding: 40px 32px;
   color: #f4f4fd;
   background-color: #4d5ae5;
   width: 100%;
@@ -593,7 +583,7 @@ body {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-/*====================== /portfolio =================*/
+/*====================== /PORTFOLIO =================*/
 
 /* ===================== BACKDROP ====================*/
 
@@ -604,13 +594,15 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  /* opacity: 1;
-  transform: scale(1.15); */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--transition-duration-and-func),
+    visibility var(--transition-duration-and-func);
 }
 
 .modal {
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -619,6 +611,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: transform var(--transition-duration-and-func);
 }
 
 .modal-close-button {
@@ -634,6 +627,23 @@ body {
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color var(--transition-duration-and-func),
+    color var(--transition-duration-and-func);
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  border: none;
+  background-color: #404bbf;
+}
+
+.modal-close-icon {
+  transition: fill var(--transition-duration-and-func);
+}
+
+.modal-close-button:hover .modal-close-icon,
+.modal-close-button:focus .modal-close-icon {
+  fill: #ffffff;
 }
 
 .is-hidden {

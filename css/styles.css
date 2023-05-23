@@ -166,7 +166,7 @@ body {
   gap: 40px;
 }
 
-.contact-mail {
+.contact {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -175,7 +175,7 @@ body {
   transition: color var(--transition-duration-and-func);
 }
 
-.contact-tel {
+/* .contact-tel {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -183,17 +183,13 @@ body {
   color: #434455;
   margin-right: 70px;
   transition: color var(--transition-duration-and-func);
-}
+} */
 
-.contact-mail:hover,
-.contact-mail:focus {
+.contact:hover,
+.contact:focus {
   color: #404bbf;
 }
 
-.contact-tel:hover,
-.contact-tel:focus {
-  color: #404bbf;
-}
 /* ==========/header========== */
 
 /*  =================slogan================*/
@@ -409,8 +405,8 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--customers-logo-color);
-  transition: color var(--transition-duration-and-func),
-    border-color var(--transition-duration-and-func);
+  transition: border-color var(--transition-duration-and-func),
+    color var(--transition-duration-and-func);
 }
 
 .customers-list-link:hover,

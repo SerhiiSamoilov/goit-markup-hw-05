@@ -628,7 +628,7 @@ body {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color var(--transition-duration-and-func),
-    color var(--transition-duration-and-func);
+    border var(--transition-duration-and-func);
 }
 
 .modal-close-button:hover,
